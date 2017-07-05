@@ -1,12 +1,18 @@
 const express = require('express');
 const mustacheExpress = require('mustache-express');
-const data = require('./models/user');
+// const data = require('./models/user');
 const path = require('path');
 const userController = require('./controllers/user');
+const MongoClient = require('mongodb').MongoClient;
 
 const app = express();
 
 app.use('/public', express.static(path.join(__dirname, 'public')));
+// app.use((req, res, next) => {
+//   MongoClient.connect('mongodb://localhost:27017/jmddb', (errors, db) => {
+//
+//   });
+// });
 
 app.engine('mustache', mustacheExpress());
 app.set('view engine', 'mustache');
