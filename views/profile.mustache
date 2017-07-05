@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="public/style.css">
+  </head>
+  <body class="profile-body">
+    <div class="profile-container">
+      <section class="top-section">
+          <img src="{{avatar}}" alt="User Picture" class="round-user">
+          <h1>{{name}}</h1>
+          <p class="profile-p"><span>{{address.city}}</span>, <span>{{address.country}}</span> | <span>{{job}}</span>, <span>{{company}}<span class="red">{{^company}}Available for hire{{/company}}</span></span> <span>{{email}}</span> | <span>{{phone}}</span></p>
+      </section>
+      <section class="bottom-section">
+          <h3>Education <span class="education-span">{{university}}</span></h3>
+          <h3 class="skills">Skills <span class="span-skills">{{skills}}</span></h3>
+      </section>
+    </div>
+  </body>
+</html>

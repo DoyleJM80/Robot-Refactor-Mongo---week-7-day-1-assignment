@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  font-family: thonburi-light, sans-serif;
+}
+
+#user-section {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.users {
+  border-style: solid;
+  border-width: thin;
+  flex: 1 1 20%;
+  margin: 10px;
+  height: 430px;
+  max-width: 320px;
+}
+
+.center {
+  width: 100%;
+  height: 50%;
+}
+
+.index-p {
+  font-size: 24px;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+a {
+  font-size: 31.5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.round-user {
+  border-radius: 50%;
+  border-style: solid;
+  border-width: thin;
+  float: left;
+}
+
+.profile-container {
+  height: 400px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.profile-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 60px;
+  padding-left: 190px;
+  font-weight: 100;
+}
+
+.profile-p {
+  padding-left: 190px;
+  margin-top: -30px;
+  font-size: 20px;
+}
+
+.top-section {
+  padding-bottom: 5px;
+}
+
+.bottom-section {
+  padding-left: 60px;
+}
+
+.education-span {
+  margin-left: 35px;
+}
+
+.skills {
+  margin-left: 40px;
+}
+
+.span-skills {
+  margin-left: 35px;
+}
+
+.red {
+  color: red;
+}

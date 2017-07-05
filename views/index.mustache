@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>User Database</title>
+    <link rel="stylesheet" href="/public/style.css">
+  </head>
+  <body>
+    <section id="user-section">
+      {{#users}}
+        <div class="users">
+          <img src="{{avatar}}" alt="user image" class="center">
+          <h2><a href="{{id}}">{{name}}</a></h2>
+          <p class="index-p">{{job}} {{company}}<span class="red">{{^company}}Available for hire{{/company}}</span></p>
+        </div>
+      {{/users}}
+    </section>
+  </body>
+</html>
