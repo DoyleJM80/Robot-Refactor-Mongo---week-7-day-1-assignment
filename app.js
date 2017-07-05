@@ -1,10 +1,10 @@
-var express = require('express');
-var mustacheExpress = require('mustache-express');
-var data = require('./models/user');
-var path = require('path');
-var userController = require('./controllers/user');
+const express = require('express');
+const mustacheExpress = require('mustache-express');
+const data = require('./models/user');
+const path = require('path');
+const userController = require('./controllers/user');
 
-var app = express();
+const app = express();
 
 app.use('/public', express.static(path.join(__dirname, 'public')));
 

@@ -15,12 +15,16 @@
   ],
   "author": "Jamie Doyle",
   "license": "UNLICENSED",
+  "jshintConfig": {
+    "esversion": 6
+  },
   "bugs": {
     "url": "https://github.com/TheDoyles922/week-5-day-2-project/issues"
   },
   "homepage": "https://github.com/TheDoyles922/week-5-day-2-project#readme",
   "dependencies": {
     "express": "^4.15.3",
+    "mongodb": "^2.2.29",
     "mustache-express": "^1.2.4",
     "path": "^0.12.7"
   }
