@@ -19,8 +19,9 @@ app.set('view engine', 'mustache');
 app.set('views', './views');
 
 app.get('/index', userController.index);
-
 app.get('/:id', userController.profile);
+app.post('/looking', userController.looking);
+app.post('/employed', userController.employed);
 
 
 app.listen(3000, function () {

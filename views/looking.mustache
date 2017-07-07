@@ -7,19 +7,15 @@
   </head>
   <body>
   <header>
-    <form class="" action="/looking" method="post">
-      <input type="submit" name="" value="looking">
-    </form>
-    <form class="" action="/employed" method="post">
-      <input type="submit" name="" value="employed">
-    </form>
+    <a href="/looking">Looking for Work</a>
+    <a href="/employed">Currently Employed</a>
   </header>
     <section id="user-section">
       {{#model}}
         <div class="users">
           <img src="{{avatar}}" alt="user image" class="center">
           <h2><a href="{{id}}">{{name}}</a></h2>
-          <p class="index-p">{{job}} {{company}}<span class="red">{{^company}}Available for hire{{/company}}</span></p>
+          <p class="index-p">{{job}} {{company}}<span class="red">Available for hire</span></p>
         </div>
       {{/model}}
     </section>
